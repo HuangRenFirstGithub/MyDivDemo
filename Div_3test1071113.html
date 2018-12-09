@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Div練習三</title>
+<script src="Scripts/swfobject_modified.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<style>
+	body{
+		margin-top: 0px;
+	}
+	#header{
+	width: 800px;
+	height: 139px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #636262;
+	background-imagex: url(TeacherPhoto/page_head.jpg);
+	text-align: right;
+//文字對齊靠右
+		padding-top: 50px; //內容距離上邊50PX 
+; 	background-image: url(TeacherPhoto/page_head.jpg);
+	}
+	#center{
+		width:800px;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url(TeacherPhoto/content_bg.gif);
+		background-repeat: repeat-y;
+	}
+	
+	#left{
+		width: 265px;
+		height: 500px;
+		float: left;
+	}
+	#left img{
+		display: block;
+	}
+	
+#left #news ul {
+	list-style-type: none;
+	padding-left: 10px;
+}
+#left #news ul li {
+	background-image: url(images/12_avatar-24.png);
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#news a:link {
+	color: #878080;
+	text-decoration: none;
+	font: 1em "微軟正黑體", "標楷體", "Adobe 黑体 Std R", "Adobe 繁黑體 Std B";
+}
+#news a:hover {
+	color: #E373DB;
+	font: bold 1.5em "微軟正黑體", "標楷體", "Adobe 黑体 Std R", "Adobe 繁黑體 Std B";
+	text-decoration: underline;
+}
+#center #left #news {
+	margin-left: 55px;
+	margin-right: 25px;
+}
+	#right{
+	width: 535px;
+	height: 500px;
+	float: right;
+	background-image: url(TeacherPhoto/right_bg.gif);
+	background-repeat: no-repeat;
+	}
+#center #right #text {
+	height: 200px;
+	color: #312929;
+	font: bolder 16px "微軟正黑體", "標楷體", "Adobe 黑体 Std R", "Adobe 繁黑體 Std B";
+	text-indent: 25px;
+	padding-right: 32px;
+	padding-left: 6px;
+	text-align: center;
+	overflow-y: scroll;
+}
+	#footer{
+		width:800px;
+		height: 24px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url(TeacherPhoto/footer.gif);
+		background-repeat: no-repeat;
+	}
+</style>
+<body onLoad="MM_preloadImages('TeacherPhoto/menu1_over.jpg','TeacherPhoto/menu2_over.jpg','TeacherPhoto/menu3_over.jpg','TeacherPhoto/menu4_over.jpg')">
+<div id="header">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="50" id="FlashID" title="我的網站logo動畫">
+    <param name="movie" value="swf/logo.swf">
+    <param name="quality" value="high">
+    <param name="wmode" value="transparent">
+    <param name="swfversion" value="6.0.65.0">
+    <!-- 此 param 標籤會提示使用 Flash Player 6.0 r65 和更新版本的使用者下載最新版本的 Flash Player。如果您不想讓使用者看到這項提示，請將其刪除。 -->
+    <param name="expressinstall" value="Scripts/expressInstall.swf">
+    <!-- 下一個物件標籤僅供非 IE 瀏覽器使用。因此，請使用 IECC 將其自 IE 隱藏。 -->
+    <!--[if !IE]>-->
+    <object type="application/x-shockwave-flash" data="swf/logo.swf" width="300" height="50">
+      <!--<![endif]-->
+      <param name="quality" value="high">
+      <param name="wmode" value="transparent">
+      <param name="swfversion" value="6.0.65.0">
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- 瀏覽器會為使用 Flash Player 6.0 和更早版本的使用者顯示下列替代內容。 -->
+      <div>
+		<img src="images/GifDemo.gif" width="300" height="100" alt=""/>
+      </div>
+      <!--[if !IE]>-->
+    </object>
+    <!--<![endif]-->
+  </object>
+</div>
+<div id="center">
+	<div id="left"><img src="TeacherPhoto/menu_title.jpg" width="265" height="40" alt=""/><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','TeacherPhoto/menu1_over.jpg',1)"><img src="TeacherPhoto/menu1.jpg" alt="" width="265" height="42" id="Image3"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','TeacherPhoto/menu2_over.jpg',1)"><img src="TeacherPhoto/menu2.jpg" alt="" width="265" height="42" id="Image4"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','TeacherPhoto/menu3_over.jpg',1)"><img src="TeacherPhoto/menu3.jpg" alt="" width="265" height="43" id="Image5"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','TeacherPhoto/menu4_over.jpg',1)"><img src="TeacherPhoto/menu4.jpg" alt="" width="265" height="46" id="Image6"></a>
+	  <div id="news">
+	  	  <ul>
+			<li><a href="#">回到首頁</a></li>
+			<li><a href="#">產品型錄</a></li>
+			  <li><a href="#">作品展示</a></li>
+			  <li><a href="#">關於我們</a></li>
+			  <li><a href="#">聯絡我們</a></li>			
+			</ul>
+		</div>
+	</div>
+  <div id="right">
+    <p><img src="TeacherPhoto/intro_pic.jpg" width="500" height="139" alt=""/></p>
+    <p><img src="TeacherPhoto/newpic.gif" width="245" height="72" alt=""/></p>
+    <p><img src="TeacherPhoto/menu1_over.jpg" width="265" height="42" alt=""/></p>
+    <div id="text">例引後度居務車以總空下花單為 我我形；生見今以位！心十倒！是黑首灣怎……品我場類每當每不：多三同年引：成地變華字種國來、化口我數趣間連化要。代際於運解手家減面銷片上查不條山代第。 建它雖究師。得比銷要王。 視境面向北快病發立上買！下音金的戲差們來校道美？感要超說區從得像亞巴是無八多積流加。 濟感的保著。 無定候我公停人市部的，其素會出象拿由個她不動門案道程理子營成利如速吃；山識世，實一萬龍，說時學到可步大行容，海經年有年歷用得處歌盡得就陸樂中聽前子著給了？然計思須……何有回她的太布親！覺至作受片小自馬……心因自試天可五難部；們現當化遊不，氣主有復員現花，力他然素……中間工。轉不收雜開起小身動用李八……爸部我甚、西生之這變到笑來包股代之己了大比資學也義初病保輕主書生程學經成權接希會這是著保成回是回起的究小類我中車他來用不居不會人前，無顯男地是雖在我媽星會一屋人一受一發以灣那。己人明印銷科不老學過開是時到時可王只蘭和感大人命有影理一局；人演情似。金道公速是安個天高。出地代中且快賽族布開建此企服積明如人，想政些必意李人年帶制著斷媽白顯票著信新、風前此其行爸又然如中教班世自國那其自營分行滿發作大未頭成？ 舉勢就羅。時然該內，勢輕畫地。提動發蘭間，古維麼品了復生持有受作我了是望維顧意半下正了有實……百綠學麼中樹團稱長出怎我代個制出場進也地個、在職好因飛，除聽全老灣爸共，量道候西。 醫住經外有所吃！自國那其自營分行滿發作大未頭成？ 舉勢就羅。時然該內，勢輕畫地。提動發蘭間，古維麼品了復生持有受作我了是望維顧意半下正了有實……百綠學麼中樹團稱長出怎我代個制出場進也地個、在職好因飛，除聽全老灣爸共，量道候西。 醫住經外有所吃！</div>
+
+  </div>
+</div>
+<div id="footer"></div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>
